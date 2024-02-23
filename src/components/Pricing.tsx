@@ -26,52 +26,49 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Free",
+    title: "Adventurer",
     popular: 0,
-    price: 0,
+    price: 9.99,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "An ideal tier for those embarking on their AI journey, offering a solid foundation of features at a great value.",
     buttonText: "Get Started",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "Unlimited Premium AI Models",
+      "Standard AI Speed Boost",
+      "480 Monthly Credits",
+      "Standard Memory",
     ],
   },
   {
-    title: "Premium",
+    title: "Hero",
     popular: 1,
-    price: 5,
+    price: 14.99,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "For the accomplished explorer, our Hero tier accelerates your AI exploits with enhanced capabilities.",
     buttonText: "Start Free Trial",
     benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Unlimited Premium AI Models",
+      "Standard AI Speed Boost",
+      "760 Monthly Credits",
+      "2x Memory",
     ],
   },
   {
-    title: "Enterprise",
+    title: "Legend",
     popular: 0,
-    price: 40,
+    price: 29.99,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "The ultimate choice for AI virtuosos, the Legend tier provides unparalleled access and perks.",
     buttonText: "Contact US",
     benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Unlimited Premium AI Models",
+      "Premium AI Speed Boost",
+      "1,650 Monthly Credits",
+      "4x Memory",
+      "Unlimited Image Generation",
     ],
   },
 ];
-
 export const Pricing = () => {
   return (
     <section
@@ -79,16 +76,11 @@ export const Pricing = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          {" "}
-          Unlimited{" "}
-        </span>
-        Access
+        Free to play
+
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
+A better experience.
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
